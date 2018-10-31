@@ -1,4 +1,4 @@
-import firebase, { auth, provider } from "firebase";
+import firebase from "firebase";
 
 // Initialize Firebase
 var config = {
@@ -10,9 +10,12 @@ var config = {
   messagingSenderId: "873415807995"
 };
 if (!firebase.apps.length) {
-  firebase.initializeApp(config);
+    firebase.initializeApp(config);
+
+
 } else firebase.app();
 
-// export const authProvider = new firebase.auth.GoogleAuthProvider();
-// export const gAuth = new firebase.auth();
-export default firebase;
+
+export const auth = new firebase.auth();
+export {firebase}
+ 
