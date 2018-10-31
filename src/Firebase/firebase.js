@@ -10,12 +10,8 @@ var config = {
   messagingSenderId: "873415807995"
 };
 if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-
-
+  firebase.initializeApp(config);
 } else firebase.app();
 
-
 export const auth = new firebase.auth();
-export {firebase}
- 
+export { firebase };
