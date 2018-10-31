@@ -1,2 +1,0 @@
-# HOC
-Created with CodeSandbox
